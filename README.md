@@ -1,4 +1,6 @@
 # unam.fi.compilers.g5.04
-Creación de proyecto lexer
+Readme del repo, aqui solo deberia ir una descripcion que es para la 
+materia de compiladores
 
-aqui puede ser el reporte, sino en un PDF usando Latex
+
+
