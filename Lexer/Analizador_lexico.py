@@ -50,7 +50,7 @@ class Lexer:
             # ?: Indica que solo busca una coincidencia pero no la guarda.
             # (Patron1|Patron2) permite buscar diferentes patrones
             
-            ('KEYWORD', r'\b(?:int|printf|float|string)\b'),   # Palabras clave: print, int,
+            ('KEYWORD', r'\b(?:int|print|float|string|if|elif|else|while|for|return)\b'),   # Palabras clave: print, int, etc.
             
             # [a-zA-Z_] -> Obliga a empezar con una letra o guion bajo
             # \w* -> Los siguientes caracteres pueden ser cualquier numero, letra o guion bajo
@@ -113,13 +113,13 @@ class Lexer:
 if __name__ == '__main__':
     
     # Ejemplos con los que probar
-    example1 = 'printf("This is an example");'
+    example1 = 'print("This is an example");'
     example2 = 'int a=10;'
     example3 = """int a = 10;
-printf("This is an example!!!!");
+print("This is an example!!!!");
 int b = 20;
 float c = (500 * 4) / 20 + 1 - 10;
-printf(c);
+print(c);
 print(!!!"hello"); 
 string answer_5 = c;
 """
